@@ -33,7 +33,7 @@ class Portfolio:
 		self.entry = entry
 		#  self.positions = dict(zip(positions, entry))  # make dictionary from two lists
 		self.positions_dict = {'Symbol': positions, 'entry': entry}
-		self.df_positions = pd.DataFrame.from_dict(self.positions_dict)
+		# self.df_positions = pd.DataFrame.from_dict(self.positions_dict)
 		self.portfolio_size = 11000
 		self.cash = 6000
 
