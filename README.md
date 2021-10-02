@@ -24,19 +24,19 @@ pip version 20.1.1 from /$(yahoo-trading-dir)/lib/python3.7/site-packages/pip
 
 Folders / files used by jupyter and virtul environment:
 
-bin/
-etc/
-include/
-lib/
-share/
-pyenv.cfg
+- bin/
+- etc/
+- include/
+- lib/
+- share/
+- pyenv.cfg
 
 Files used to do analyses:
 
-PersonalFinance.ipynb -> main notebook for Udacity course (FILE FOR UDACITY)
-Playground.ipynb -> testing things
-main.py -> driver for stockplotter.py / stockscanner.py (classes in progress for algorithmic trading & portfolio tracking)
-info.txt -> to print stock info to file for a record
+- PersonalFinance.ipynb -> main notebook for Udacity course (FILE FOR UDACITY)
+- Playground.ipynb -> testing things
+- main.py -> driver for stockplotter.py / stockscanner.py (classes in progress for algorithmic trading & portfolio tracking)
+- info.txt -> to print stock info to file for a record
 
 ## Results Summary
 
