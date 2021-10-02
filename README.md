@@ -34,7 +34,7 @@ Folders / files used by jupyter and virtul environment:
 Files used to do analyses:
 
 - PersonalFinance.ipynb -> main notebook for Udacity course (FILE FOR UDACITY)
-- Playground.ipynb -> testing things
+- playground.ipynb -> testing things
 - main.py -> driver for stockplotter.py / stockscanner.py (classes in progress for algorithmic trading & portfolio tracking)
 - info.txt -> to print stock info to file for a record
 
