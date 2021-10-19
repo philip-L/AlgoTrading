@@ -1,4 +1,4 @@
-# Yahoo Trading
+# Algorithmic Trading
 
 ## Motivation
 
