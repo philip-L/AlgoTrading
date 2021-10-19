@@ -33,7 +33,7 @@ if __name__ == '__main__':
     # Obtain the stock symbol, period and interval (optionals) from the command line
     # Can pass a list of symbols to tickers object in yfinance
     # these could all be treated differently
-    # 11 sectors of S&P lists TODO update dynamically
+    # 11 sectors of S&P lists TODO update dynamically add and remove symbols to these lists
     # Energy: XLE.
     # Materials: XLB.
     # Industrials: XLI.
@@ -43,7 +43,8 @@ if __name__ == '__main__':
     # Financials: XLF.
 
     technology = ['lumn', ]  # 20.8%
-    healthCare = []  # 14.9%
+    healthCare = ['snoa',]  # 14.9%
+    financials = ['tlt.to', ] # 13.8%
     consumeDiscretion = ['mcd']  # 10.2%
     commServices = ['viac']  # 9.9%
     industrials = []  # 9.7%
@@ -53,21 +54,22 @@ if __name__ == '__main__':
     realEstate = []  # 2.7%
     materials = ['gold.to', 'xme', 'xbm', 'slv', 'gld', 'ag', 'fcx', 'pslv', 'goro', 'ar']  # 2.5%
 
+    watchlist3 = ['ac.to', 'zwb.to', 'de.to', 'fts.to', 'fru.to', 'hwx.to', 'su.to', 'tlry.to']
     # positions = ['tlry.to', 'huv.to', 'gold.to', 'wmt', 'ac.to', 'l.to', 'cgx.to', 'vcn.to', 'xei.to', 'xqb.to' ]
     # pos_entry = [6.12, 2.32, 118.26, 22.28, 66.37, 33.95, 32.50, 16.95, 21.07, 149.81]
     etfs = ['potx', 'copx', 'xme', 'subz', 'smh', 'xqb.to' 'huv.to', 'uvxy', 'vcn.to', 'mj', 'slv', 'pslv', 'gld']
     watchlist1 = ['doge-cad', 'btc-cad', 'qqq', 'spy', '^dji', 'f', 'disca', 'vwagy']
     watchlist2 = {'infn', 'mgi', 'pfe', 'ar', 'net', 'fcel', 'food', 'love', 'crox', 'anf', 'kss', 'bke', 'dis', 'jwn',
                 'fubo', 'disca', 'cat', 'bynd', 'dash', }  # a set
-    growth = ['sono', 'pll']
+    growth = ['sono', 'pll', 'sprt']
     retail = ['m', 'anf', 'wmt', 'kss']  # retail and travel doing well march 2021
     hedging = ['slv', 'gld', 'ag', 'fcx', 'pslv', 'doge', 'goro']
-    indexes = ['huv.to', 'uvxy', 'xqb.to', 'spy', 'vcn.to', 'qqq', 'dia']
+    indexes = ['huv.to', 'uvxy', 'xqb.to', 'spy', 'vcn.to', 'qqq', 'dia', 'iyw']
     cannabis = ['tlry.to','grwg', 'mj', 'potx']
     streaming = ['subz', 'fubo', 'disca', 'dis']
-    semiconductor = ['smh', 'intc', 'amd']
-    auto = ['f', 'tsla', '']
-    crypto = ['mara']
+    semiconductor = ['smh', 'intc', 'amd', 'mu', 'mchp']
+    auto = ['f', 'tsla', 'vwagy']
+    crypto = ['mara', 'omg', '']
 
     if len(sys.argv) > 1:
         ticker = sys.argv[1]
@@ -78,7 +80,7 @@ if __name__ == '__main__':
         else:
             interval = sys.argv[3]
     # TODO to/from json
-    watchlist2.update(etfs)  # join iterable
+    watchlist2.update(etfs)  # join a list to a set
     print(f'Current watchlist2: {watchlist2}')
     # print('Input ticker symbols to append to watchlist. Press <enter> to skip.')
     # while 1:
@@ -94,7 +96,7 @@ if __name__ == '__main__':
     f.write(str(datetime.datetime.now()) + "\n")
     f.close()
     obj = scan()
-    for tickr in obj.prtflio.positions:
+    for tickr in obj.portfolio.positions:
         obj.ticker = tickr
         obj.scan()  # plot, calculate obj.percent_gain()
         # time.sleep(1)

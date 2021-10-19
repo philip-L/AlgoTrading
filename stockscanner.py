@@ -54,8 +54,8 @@ class StockScanner (StockPlotter):  # doesn't need to be like this just have def
 		# qtrade: xqb, ac, wmt
 		# scotia: l, cgx, huv, cnq
 		positions = ['tlry.to', 'gold.to', 'wmt', 'ac.to', 'l.to', 'cgx.to', 'vcn.to', 'xei.to', 'xqb.to', 'huv.to', 'cnq.to']
-		entry = [6.12, 2.32, 118.26, 22.28, 66.37, 33.95, 32.50, 16.95, 21.07, 149.81]
-		self.prtflio = Portfolio(positions, entry)
+		pos_entry = [6.12, 2.32, 118.26, 22.28, 66.37, 33.95, 32.50, 16.95, 21.07, 149.81]
+		self.portfolio = Portfolio(positions, pos_entry)
 		exit = []
 		# 	buylimit - price limit to buy - entry
 		self.buy_limit = 0

@@ -28,7 +28,7 @@ class StockPlotter:
 		self.tickerobj = yf.Ticker(ticker)  # yfinance Ticker object
 		self.name = ticker.upper()
 		self.exit = []  # calculated from graph
-		self.target = [x*4 for x in self.prtflio.entry]
+		# self.target = [x*4 for x in self.portfolio.entry]
 		self.risk = []  # potential for loss
 		self.stop = []  # stop loss
 		self.tickerobj.ticker = ticker.upper()
