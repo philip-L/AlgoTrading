@@ -6,7 +6,7 @@ I believe everyone deserves financial freedom. Since 2019 I started taking a dee
 
 ## Libraries & Environment
 
-Libraries can be found in requirements.txt (pip install requirements.txt)
+Libraries can be found in requirements.txt (pip install -r requirements.txt)
 
 Libraries of note:
 - finviz API
@@ -46,11 +46,11 @@ From a list of 150 companies retrieved using the unofficial Finviz screener API,
 
 Very thankful for https://github.com/mariostoev/finviz and https://github.com/ranaroussi/yfinance!
 
-## Steps for setup
+## Steps for setup (on Mac OS 10.15)
 
 1. Clone this repository
-2. Download python
-3. Open a terminal at the repository folder and type "pip install -r requirements.txt"
-4. Type "jupyter notebook &"
-5. In the browser, open the PersonalFinance notebook (should be something like http://localhost:8889/notebooks/PersonalFinance.ipynb
-6. Run the code, modify, enjoy
+3. Download python
+4. Open a terminal at the repository folder and type "source bin/activate"
+6. Type "jupyter notebook &"
+7. In the browser, open the PersonalFinance notebook (should be something like http://localhost:8889/notebooks/PersonalFinance.ipynb
+8. Run the code, modify, enjoy
