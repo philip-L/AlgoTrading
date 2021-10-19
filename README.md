@@ -2,7 +2,7 @@
 
 ## Motivation
 
-I believe everyone deserves financial freedom. Since 2019 I started taking a deeper interest in the stock market, trying to find trends, and use algorithmic trading. I wanted to use automation on my personal portfolio and have a conservative trading method. 
+I believe everyone deserves financial freedom. Since 2019 I started taking a deeper interest in the stock market, trying to find trends, and use algorithmic trading. I want to use automation on my personal portfolio and have a conservative strategy. 
 
 ## Libraries & Environment
 
@@ -40,8 +40,17 @@ Files used to do analyses:
 
 ## Results Summary
 
-
+From a list of 150 companies retrieved using the unofficial Finviz screener API, I filtered with percent gain, current ratio and intrinsic value to find that Kirkland Lake Gold Ltd. is a good choice for a conservative strategy.
 
 ## Acknowledgements
 
 Very thankful for https://github.com/mariostoev/finviz and https://github.com/ranaroussi/yfinance!
+
+## Steps for setup
+
+1. Clone this repository
+2. Download python
+3. Open a terminal at the repository folder and type "pip install -r requirements.txt"
+4. Type "jupyter notebook &"
+5. In the browser, open the PersonalFinance notebook (should be something like http://localhost:8889/notebooks/PersonalFinance.ipynb
+6. Run the code, modify, enjoy
