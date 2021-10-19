@@ -37,7 +37,12 @@ Files used to do analyses:
 
 ## Results Summary
 
-From a list of 150 companies retrieved using the unofficial Finviz screener API, I filtered with percent gain, current ratio and intrinsic value to find that Kirkland Lake Gold Ltd. seems like a good choice in this simple conservative strategy.
+Questions investigated:
+- What companies stock are trending upward?
+- What companies have the best balance sheet?
+- What does the chart show?
+
+From a list of 150 companies retrieved using the unofficial Finviz screener API, I filtered with percent gain, current ratio and intrinsic value to find that Kirkland Lake Gold Ltd. seemed like a good choice in this simple conservative strategy and plotted it's closing price history.
 
 ## Acknowledgements
 
