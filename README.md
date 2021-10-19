@@ -2,7 +2,7 @@
 
 ## Motivation
 
-I believe everyone deserves financial freedom. Since 2019 I started taking a deeper interest in the stock market, trying to find trends, and use algorithmic trading. I want to use automation on my personal portfolio and have a conservative strategy. 
+I believe everyone deserves financial freedom. Since 2019 I started taking a deeper interest in the stock market, trying to find trends, and use algorithmic trading. I want to use automation on my personal portfolio and have a conservative strategy. Blog link: https://blog-react-0.herokuapp.com/ 
 
 ## Libraries & Environment
 
@@ -50,7 +50,9 @@ Very thankful for https://github.com/mariostoev/finviz and https://github.com/ra
 
 1. Clone this repository
 3. Download python
-4. Open a terminal at the repository folder and type "source bin/activate"
-6. Type "jupyter notebook &"
-7. In the browser, open the PersonalFinance notebook (should be something like http://localhost:8889/notebooks/PersonalFinance.ipynb
-8. Run the code, modify, enjoy
+4. Open a terminal at the repository folder and type "python -m venv finance" 
+5. Type "source "finance/bin/activate"
+6. Type "pip install -r requirements.txt"
+7. Type "jupyter notebook &"
+8. In the browser, open the PersonalFinance notebook (should be something like http://localhost:8889/notebooks/PersonalFinance.ipynb
+9. Run the code. The yahoo finance API has a new bug, charting and percent gain analysis might not be working
