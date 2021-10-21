@@ -1,3 +1,6 @@
 .ipynb_checkpoints/*
 Stocks/*
 .idea/
+playground.ipynb
+*.py
+*.xlsx
