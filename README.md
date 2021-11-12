@@ -2,7 +2,7 @@
 
 ## Motivation
 
-I believe everyone deserves financial freedom. Since 2019 I started taking a deeper interest in the stock market, trying to find trends, and use algorithmic trading. I want to use automation on my personal portfolio and have a conservative strategy. Blog link: https://blog-react-0.herokuapp.com/ 
+I believe everyone deserves financial freedom. Since 2019 I started taking a deeper interest in the stock market, trying to find trends, and use algorithmic trading. I want to use automation on my personal portfolio and have a conservative strategy. I explore the Long Short-Term Memory (LSTM) Keras model as a stock price indicator. Blog link: https://blog-react-0.herokuapp.com/ 
 
 ## Libraries & Environment
 
@@ -13,6 +13,7 @@ Libraries of note:
 - yahoo-finance API
 - numpy and pandas
 - matplotlib.pyplot
+- Keras (tensorflow)
 
 Developped on MacOS Catalina 10.15.4
 
@@ -37,16 +38,22 @@ Files used to do analyses:
 
 ## Results Summary
 
-Questions investigated:
-- What companies stock are trending upward?
-- What companies have the best balance sheet?
-- What does the chart show?
+Questions/ideas investigated in the jupyter notebook:
+Part 1 (first udacity blog post):
+  - What companies stock are trending upward?
+  - What companies have the best balance sheet?
+  - What does the chart show?
 
 From a list of 150 companies retrieved using the unofficial Finviz screener API, I filtered with percent gain, current ratio and intrinsic value to find that Kirkland Lake Gold Ltd. seemed like a good choice in this simple conservative strategy and plotted it's closing price history.
 
+Part 2 (udacity capstone):
+- LSTM model as a stock price indicator
+
+LSTM is a model great for regression which was perfect to create a simple stock price indicator.
+
 ## Acknowledgements
 
-Very thankful for https://github.com/mariostoev/finviz and https://github.com/ranaroussi/yfinance!
+Very thankful for https://github.com/mariostoev/finviz, https://github.com/ranaroussi/yfinance, and https://www.youtube.com/watch?v=QIUxPv5PJOY&ab_channel=ComputerScience!
 
 ## Steps for setup (on Mac OS 10.15)
 
