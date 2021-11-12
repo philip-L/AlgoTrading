@@ -49,7 +49,7 @@ From a list of 150 companies retrieved using the unofficial Finviz screener API,
 Part 2 (udacity capstone):
 - LSTM model as a stock price indicator
 
-LSTM is a model great for regression which was perfect to create a simple stock price indicator.
+LSTM is a model great for regression which was perfect to create a simple stock price indicator. It predicted close to the actual values in the case I tested with. The model could be explored further, for example I expect if there is greater short-term volatility it would perform less well.
 
 ## Acknowledgements
 
