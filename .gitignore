@@ -4,3 +4,5 @@ trade/*
 playground.ipynb
 *.py
 *.xlsx
+*.xls
+.DS_Store
