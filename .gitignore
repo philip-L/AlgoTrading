@@ -1,5 +1,6 @@
 .ipynb_checkpoints/*
 trade/*
+finance/*
 .idea/
 playground.ipynb
 *.py
